@@ -29,7 +29,7 @@ document.addEventListener('mousemove', (e) => {
         currentY <= rcorners1Rect.bottom
     ) {
         // Change the circle's border color when it is inside #rcorners1
-        cursorCircle.style.borderColor = '#d53b3b'; // Change to the desired color
+        cursorCircle.style.borderColor = '#3B5CD5'; // Change to the desired color
     } else {
         // Reset the circle's border color when it is outside #rcorners1
         cursorCircle.style.borderColor = 'white'; // Change to the default color
