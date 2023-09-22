@@ -1,12 +1,10 @@
 <!---// cameronos.github.io --->
 <!---// (c) 2023 Orange Computers Ltd. --->
-<!---// watch?v=Bl49Oautfhs --->
+<!---// watch?v=M3iVgbqKE8A --->
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
       <!--Meta tags start-->
@@ -32,7 +30,7 @@
       <!--EndImgs-->
       <div class="circle" id="cursor-circle"></div>
       <script src="script.js"></script>
-      <title>Home - cameronos</title>
+      <title>Audio - cameronos</title>
       <style>
          body {
          background-color: #191724;
@@ -46,24 +44,22 @@
          font-size: 12px;
          color: white;
          }
-         .job-title {
-         overflow-wrap: break-word; /* This allows the text to break onto multiple lines */
-         white-space: nowrap; /* Prevents the text from breaking to the next line if there's space */
-         }
          #rcorners1 {
          border-radius: 25px;
          background: #FAF4ED;
          padding: 20px;
          width: 640px;
-         height: 105px;
+         height: 115px;
          color: #26233a;
          font-weight: bold;
          font-family: 'Ubuntu Mono', monospace;
-         font-size: 15px;
+         font-size: 13px;
          }
-         /* Default styles for the scrollable container */
-         .scrollable-container {
-         overflow: hidden; /* Hide overflow on larger screens */
+         #rcorners1 a {
+         color: #963A74;
+         }
+         pre {
+         line-height: 0.75; /* Adjust this value to control the line spacing */
          }
          #centered-div {
          text-align: center
@@ -79,8 +75,9 @@
          justify-content: space-between;
          text-align: center;
          position: relative;
-         top: -20px; /* Adjust this value to move it up further */
-         margin-left: 6px;
+         top: -4px; /* Adjust this value to move it up further */
+         margin-left: -99px;
+         text-decoration: none;
          }
          .flag-wrapper {
          display: inline-flex;
@@ -90,6 +87,12 @@
          text-align: center;
          position: relative;
          top: 4px;
+         }
+         a.href-wrapper {
+         color: #9390a9; !important;
+         }
+         #href-wrapper a:visited {
+         color: #9390a9 !important;
          }
          .circle {
          width: 30px;
@@ -103,7 +106,6 @@
          }
          @media (max-width: 768px) {
          body {
-         overflow: hidden;
          cursor: none;
          font-size: 12px;
          /* Adjust font size for better readability on mobile */
@@ -113,29 +115,37 @@
          display:none;
          }
          #rcorners1 {
-         max-width: 85%;
-         overflow: auto; /* Enable scrolling on mobile devices */
-         height: 100px; /* Remove fixed height */
-         max-height: none; /* Remove max height */
+         max-width: 80%;
+         max-height: 100%;
+         align-items: center;
+         height: 123px;
+         }
+         .image-wrapper a {
+         display: flex;
+         align-items: center;
+         text-decoration: none; /* Remove underlines from links */
+         color: white;
+         }
+         .image-wrapper a img {
+         margin-right: 5px; /* Adjust the margin as needed to separate the image and text */
+         }
+         .link-text {
+         display: inline-block;
+         }
+         .link-text {
+         margin-left: 5px; /* Adjust the margin as needed to separate the text from the image */
+         display: inline-block; /* Display the text inline with the image */
+         vertical-align: middle; /* Vertically align the text with the middle of the image */
          }
          .image-wrapper {
          display: inline-flex;
          /* Make images inline */
          margin-right: 10px;
          /* Adjust the margin between images */
-         width: 80%;
+         width: 70%;
          justify-content: space-between;
          text-align: center;
          margin-top: -3px;
-         }
-         .flag-wrapper {
-         display: inline-flex;
-         margin-right: 10px;
-         width: 10%;
-         justify-content: space-between;
-         text-align: center;
-         position: relative;
-         top: 4px;
          }
          }
       </style>
@@ -143,29 +153,21 @@
    <body>
       <audio id="pop-audio" src="pop.mp3"></audio>
       <div id="centered-div">
-         <p>Hello, I'm a full-stack developer based in Fort Collins, Colorado</p>
+         <img src="img/audio.gif" width=200px> <img src="img/audio2.gif" width=200px>
+         <p>Audiophile using reel-to-reel, cassette, vinyl<br>Below shows my updated list of equipment</p>
       </div>
       <pre id="rcorners1">
-    .--.        * whoami?   cameron koehler <div class="flag-wrapper"><img src="img/flag_cu.png" width=15px>  <img src="img/flag_nw.png" width=15px></div>
-   |o_o |       * whatami?  <span class="job-title">Full-stack developer and <a href="audio.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">analog audio engineer</a></span>
-   |:_/ |       * contact   <a href="contact.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">here</a>
-  //   \ \
- (|     | )     * skillset
-/'\_   _/`\          
-\___)=(___/
-               <div class="image-wrapper">
-                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/html5.svg" width=20px></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/css3.svg" width=20px></a>
-                <a href="https://www.lua.org/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/lua.svg" width=20px></a>
-                <a href="https://www.javascript.com/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/js.svg" width=20px></a>
-                <a href="https://www.java.com/en/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/java.png" width=20px></a>
-                <a href="https://www.python.org/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/python.png" width=20px></a>
-                <a href="https://www.cloudflare.com/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/cloudflare.png" width=20px></a>
-                <a href="https://www.microsoft.com/en-us/windows-server" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/windows.svg" width=20px></a>
-                <a href="https://ubuntu.com/server" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/ubuntu.svg" width=20px></a>
-                <a href="https://fabricmc.net/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="img/icon/fabricmc.png" width=20px></a>
-            </div>
+        <span style="background-color: rgb(255,193,7)">RECORD PLAYER</span> Fluance RT-83<br>
+        <span style="background-color: rgb(255,193,7)">RECORD CARTRIDGE</span> Ortofon 2M Red<br>
+        <span style="background-color: rgb(255,193,7)">CASSETTE DECK</span> Pioneer CT-W500<br>
+        <span style="background-color: rgb(255,193,7)">REEL-TO-REEL DECK</span> Otari MX5050 BII<br>
+        <span style="background-color: rgb(255,193,7)">RECEIVER</span> Sony STR-DH190<br>
+        <span style="background-color: rgb(255,193,7)">HEADPHONES</span> Audio-Technica MH50X<br>
    </pre>
+   <img style="margin-bottom: 20px; margin-top: 20px; width: 400px; border-radius: 5%" alt="My setup" src="img/audiosetup.jpg">
+      <div id="href-wrapper">
+         <p><b><a href="index.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">Press me to return to home</a></b></p>
+      </div>
       <div id="centered-div2">
          <p><b>© 2023 Orange Computers Ltd.<br>All rights reserved.</b></p>
       </div>
