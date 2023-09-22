@@ -44,7 +44,7 @@ var allowNavigation = false;
 
 // Audio
 // Define a flag to control navigation
-var allowNavigation = false;
+var allowNavigation = true;
 
 // Function to play audio
 function playAudio(url) {
@@ -62,6 +62,14 @@ function navigateAfterDelay(url, delay) {
       window.location.href = url;
     }
   }, delay);
+}
+
+// Function to handle link clicks on mobile
+function handleMobileLinkClick(event, url) {
+  event.preventDefault();
+  playAudio('pop.mp3');
+  navigateAfterDelay(url, 100);
+  allowNavigation = false; // Prevent further navigation until audio finishes
 }
 
 // Add an event listener to set allowNavigation to false when the page is unloaded
