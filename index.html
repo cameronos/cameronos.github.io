@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+      <!--Meta tags start-->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description"
+         content="Analog audio engineer/audiophile and hobbist full-stack developer from Davenport, Florida" />
+      <meta name="author" content="Cameron Koehler" />
+      <link rel="icon" href="img/favicon.png" type="image/png">
+      <link rel="apple-touch-icon" href="img/favicon.png" />
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@cameronos_" />
+      <meta name="twitter:creator" content="@cameronos_" />
+      <meta name="theme-color" content="#0061CE" />
+      <meta property="og:site_name" content="cameronos.github.io" />
+      <meta property="og:type" content="website" />
+      <!--Img-->
+      <meta name="image" content="https://cameronos.github.io/img/embed.png" />
+      <meta name="og:image" content="https://cameronos.github.io/img/embed.png" />
+      <meta name="twitter:image" content="https://cameronos.github.io/img/embed.png" />
+      <!--EndImgs-->
+      <div class="circle" id="cursor-circle"></div>
+      <script src="script.js"></script>
+      <title>Home - cameronos</title>
+      <style>
+         body {
+         background-color: #191724;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         font-family: 'Overpass Mono', monospace;
+         font-size: 12px;
+         color: white;
+         }
+         #rcorners1 {
+         border-radius: 25px;
+         background: #FAF4ED;
+         padding: 20px;
+         width: 640px;
+         height: 105px;
+         color: #26233a;
+         font-weight: bold;
+         }
+         #centered-div {
+         text-align: center
+         }
+         #centered-div2 {
+         text-align: center;
+         color: #49456B; /* copyright text */
+         }
+         .image-wrapper {
+         display: inline-flex;
+         margin-right: 10px;
+         width: 45%;
+         justify-content: space-between;
+         text-align: center;
+         position: relative;
+         top: -20px; /* Adjust this value to move it up further */
+         margin-left: 6px;
+         }
+         .flag-wrapper {
+         display: inline-flex;
+         margin-right: 10px;
+         width: 6%;
+         justify-content: space-between;
+         text-align: center;
+         position: relative;
+         top: 4px;
+         }
+         .circle {
+         width: 30px;
+         height: 30px;
+         background-color: transparent;
+         border: 2px solid white; /* Default border color */
+         border-radius: 50%;
+         position: absolute;
+         pointer-events: none; /* Allows the cursor to interact with elements below the circle */
+         transition: transform 0.1s ease, border-color 0.3s ease; /* Add a smooth transition effect */
+         }
+         @media (max-width: 768px) {
+         body {
+         cursor: none;
+         font-size: 12px;
+         /* Adjust font size for better readability on mobile */
+         }
+         .circle
+         {
+         display:none;
+         }
+         #rcorners1 {
+         max-width: 80%;
+         /* Make it full-width on mobile */
+         overflow: hidden;
+         height: 123px;
+         }
+         #rcorners1 span {
+         display: inherit;
+         word-wrap: break-word; /* Add word-wrap property to allow text to break onto multiple lines */
+         }
+         .image-wrapper {
+         display: inline-flex;
+         /* Make images inline */
+         margin-right: 10px;
+         /* Adjust the margin between images */
+         width: 70%;
+         justify-content: space-between;
+         text-align: center;
+         margin-top: -3px;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <audio id="pop-audio" src="pop.mp3"></audio>
+      <div id="centered-div">
+         <p>Hello, I'm a full-stack developer based in Fort Collins, Colorado</p>
+      </div>
+      <pre id="rcorners1">
+    .--.        * whoami?   cameron koehler <div class="flag-wrapper"><img src="img/flag_cu.png" width=15px>  <img src="img/flag_nw.png" width=15px></div>
+   |o_o |       * whatami?  <span>Full-stack developer and analog audio engineer</span>
+   |:_/ |       * contact   <a href="contact.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">here</a>
+  //   \ \
+ (|     | )     * skillset
+/'\_   _/`\          
+\___)=(___/
+               <div class="image-wrapper">
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/html5.svg" width=20px></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/css3.svg" width=20px></a>
+                <a href="https://www.lua.org/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://camo.githubusercontent.com/a69d0c52ffa72c0c4ca85a5393257f149d46f00aab49a0313d51009417079414/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f632f63662f4c75612d4c6f676f2e737667" width=20px></a>
+                <a href="https://www.javascript.com/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/javascript.svg" width=20px></a>
+                <a href="https://www.java.com/en/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://cameronos.github.io/static/imgs/java-icon.png" width=20px></a>
+                <a href="https://www.python.org/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://cameronos.github.io/static/imgs/python-icon.svg" width=20px></a>
+                <a href="https://www.cloudflare.com/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://cameronos.github.io/static/imgs/cloudflare-icon.svg" width=20px></a>
+                <a href="https://www.microsoft.com/en-us/windows-server" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/windows.svg" width=20px></a>
+                <a href="https://ubuntu.com/server" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/ubuntu.svg" width=20px></a>
+                <a href="https://fabricmc.net/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;"><img src="https://fabricmc.net/assets/logo.png" width=20px></a>
+            </div>
+   </pre>
+      <div id="centered-div2">
+         <p><b>© 2023 Orange Computers Ltd.<br>All rights reserved.</b></p>
+      </div>
+   </body>
+</html>
