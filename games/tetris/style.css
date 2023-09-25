@@ -1,0 +1,69 @@
+/*** TAG SELECTORS ***/
+
+body {
+    background: #191724;
+    color: #fff;
+    font-family: sans-serif;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+td {
+  padding: 0 10px;
+}
+
+/*** CLASS SELECTORS ***/
+
+.game-over-box {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.game-over-content {
+  background-color: #fefefe;
+  color: #202028;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  text-align: left;
+  width: 50%;
+}
+
+.game-over-header {
+  background-color: #fefefe;
+  color: #DD2F21;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.next-piece {
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+}
+
+.stats {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    position: absolute;
+    left: 15%;
+}
+
+.tetris {
+    width: 30%;
+    display:inline-block;
+}

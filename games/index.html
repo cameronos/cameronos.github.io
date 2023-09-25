@@ -1,0 +1,190 @@
+<!---// cameronos.github.io --->
+<!---// (c) 2023 Orange Computers Ltd. --->
+<!---// watch?v=M3iVgbqKE8A --->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+      <!--Meta tags start-->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description"
+         content="Analog audio engineer/audiophile and hobbist full-stack developer from Davenport, Florida" />
+      <meta name="author" content="Cameron Koehler" />
+      <link rel="icon" href="../img/favicon.png" type="image/png">
+      <link rel="apple-touch-icon" href="../img/favicon.png" />
+      <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@cameronos_" />
+      <meta name="twitter:creator" content="@cameronos_" />
+      <meta name="theme-color" content="#0061CE" />
+      <meta property="og:site_name" content="cameronos.github.io" />
+      <meta property="og:type" content="website" />
+      <!--Img-->
+      <meta name="image" content="https://cameronos.github.io/img/embed.png" />
+      <meta name="og:image" content="https://cameronos.github.io/img/embed.png" />
+      <meta name="twitter:image" content="https://cameronos.github.io/img/embed.png" />
+      <!--EndImgs-->
+      <div class="circle" id="cursor-circle"></div>
+      <script src="../script.js"></script>
+      <title>Games - cameronos</title>
+      <style>
+         body {
+         background-color: #191724;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+         font-family: 'Overpass Mono', monospace;
+         font-size: 12px;
+         color: white;
+         }
+         #rcorners1 {
+         border-radius: 25px;
+         background: #FAF4ED;
+         padding: 20px;
+         width: 640px;
+         height: 105px;
+         color: #26233a;
+         font-weight: bold;
+         font-family: 'Ubuntu Mono', monospace;
+         font-size: 13px;
+         }
+         #rcorners1 a {
+         color: #963A74;
+         text-decoration: none;
+         }
+         pre {
+         line-height: 0.75; /* Adjust this value to control the line spacing */
+         }
+         #centered-div {
+         text-align: center
+         }
+         #centered-div2 {
+         text-align: center;
+         color: #49456B; /* copyright text */
+         }
+         .image-wrapper {
+         display: inline-flex;
+         margin-right: 10px;
+         width: 45%;
+         justify-content: space-between;
+         text-align: center;
+         position: relative;
+         top: -4px; /* Adjust this value to move it up further */
+         margin-left: -99px;
+         text-decoration: none;
+         }
+         .flag-wrapper {
+         display: inline-flex;
+         margin-right: 10px;
+         width: 6%;
+         justify-content: space-between;
+         text-align: center;
+         position: relative;
+         top: 4px;
+         }
+         a.href-wrapper {
+         color: #9390a9; !important;
+         }
+         #href-wrapper a:visited {
+         color: #9390a9 !important;
+         }
+         .circle {
+         width: 30px;
+         height: 30px;
+         background-color: transparent;
+         border: 2px solid white; /* Default border color */
+         border-radius: 50%;
+         position: absolute;
+         pointer-events: none; /* Allows the cursor to interact with elements below the circle */
+         transition: transform 0.1s ease, border-color 0.3s ease; /* Add a smooth transition effect */
+         }
+.game-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* Adjust the margin as needed */
+         }
+         .game-icon {
+            margin-right: 10px; /* Adjust the margin as needed */
+         }
+         .game-name {
+            text-align: right; /* Align text to the right */
+         }
+         @media (max-width: 768px) {
+         body {
+         cursor: none;
+         font-size: 12px;
+         /* Adjust font size for better readability on mobile */
+         }
+         .circle
+         {
+         display:none;
+         }
+         #rcorners1 {
+         max-width: 80%;
+         max-height: 100%;
+         align-items: center;
+         height: 90px;
+         }
+         .image-wrapper a {
+         display: flex;
+         align-items: center;
+         text-decoration: none; /* Remove underlines from links */
+         color: white;
+         }
+         .image-wrapper a img {
+         margin-right: 5px; /* Adjust the margin as needed to separate the image and text */
+         }
+         .link-text {
+         display: inline-block;
+         }
+         .link-text {
+         margin-left: 5px; /* Adjust the margin as needed to separate the text from the image */
+         display: inline-block; /* Display the text inline with the image */
+         vertical-align: middle; /* Vertically align the text with the middle of the image */
+         }
+         .image-wrapper {
+         display: inline-flex;
+         /* Make images inline */
+         margin-right: 10px;
+         /* Adjust the margin between images */
+         width: 70%;
+         justify-content: space-between;
+         text-align: center;
+         margin-top: -3px;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <audio id="pop-audio" src="pop.mp3"></audio>
+      <div id="centered-div">
+         <img src="../img/game.gif" width=150px>
+         <p>Variety of fun browser games</p><br><p style="font-size: 10px; color: #ed9292; margin-top: -25px">(may not work on mobile)</p>
+      </div>
+      <pre id="rcorners1">
+      <a href="tetris/index.html">
+        <div class="game-container">
+            <img src="../img/icon/game/tetris.png" width=23px class="game-icon"> 
+            <span class="game-name">Tetris</span>
+         </div></a>
+         <a href="snake/index.html"><div class="game-container">
+            <img src="../img/icon/game/snake.png" width=23px class="game-icon"> 
+            <span class="game-name">Snake</span>
+         </div></a>
+   </pre>
+      <div id="href-wrapper">
+         <p><b><a href="../index.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">Press me to return to home</a></b></p>
+      </div>
+      <div id="centered-div2">
+         <p><b>© 2023 Orange Computers Ltd.<br>All rights reserved.</b></p>
+         <p><b>All games are recreations unless otherwise specified.</b></p>
+      </div>
+   </body>
+</html>

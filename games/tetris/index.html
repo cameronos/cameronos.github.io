@@ -1,0 +1,156 @@
+<!---// cameronos.github.io --->
+<!---// (c) 2023 Orange Computers Ltd. --->
+<!---// watch?v=NoES9qER61M --->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+      <!--Meta tags start-->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description"
+         content="Analog audio engineer/audiophile and hobbist full-stack developer from Davenport, Florida" />
+      <meta name="author" content="Cameron Koehler" />
+      <link rel="icon" href="../../img/favicon.png" type="image/png">
+      <link rel="apple-touch-icon" href="../../img/favicon.png" />
+      <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@cameronos_" />
+      <meta name="twitter:creator" content="@cameronos_" />
+      <meta name="theme-color" content="#0061CE" />
+      <meta property="og:site_name" content="cameronos.github.io" />
+      <meta property="og:type" content="website" />
+      <!--Img-->
+      <meta name="image" content="https://cameronos.github.io/img/embed.png" />
+      <meta name="og:image" content="https://cameronos.github.io/img/embed.png" />
+      <meta name="twitter:image" content="https://cameronos.github.io/img/embed.png" />
+      <!--EndImgs-->
+      <div class="circle" id="cursor-circle"></div>
+      <script src="../script.js"></script>
+      <link rel="stylesheet" href="style.css">
+      </link>
+      <title>Tetris - cameronos</title>
+    </head>
+   <body>
+      <img src="img/tetris-logo.png" alt="Tetris Logo" width=180px>
+      <div class="container">
+         <div class="stats">
+            <table>
+               <tr>
+                  <td>Score:</td>
+                  <td>
+                     <div id="score"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Rows cleared:</td>
+                  <td>
+                     <div id="rows-cleared"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Level:</td>
+                  <td>
+                     <div id="level"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td style="padding: 30px;">
+                     <canvas id="held-piece" width="120" height="120"></canvas>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Singles:</td>
+                  <td>
+                     <div id="singles"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Doubles:</td>
+                  <td>
+                     <div id="doubles"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Triples:</td>
+                  <td>
+                     <div id="triples"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Tetris:</td>
+                  <td>
+                     <div id="num-tetris"></div>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="tetris">
+            <canvas id="tetris" width="300" height="600"></canvas>
+         </div>
+         <div class="next-piece">
+            Next piece:<br><br>
+            <canvas id="next-piece" width="120" height="120"></canvas>
+         </div>
+      </div>
+      <div id="game-over-window" class="game-over-box">
+         <div class="game-over-header">
+            <p><b>GAME OVER</b></p>
+         </div>
+         <div class="game-over-content">
+            <table>
+               <tr>
+                  <td>Final score:</td>
+                  <td>
+                     <div id="final-score"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Rows cleared:</td>
+                  <td>
+                     <div id="final-rows-cleared"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Level reached:</td>
+                  <td>
+                     <div id="final-level"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Singles:</td>
+                  <td>
+                     <div id="final-singles"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Doubles:</td>
+                  <td>
+                     <div id="final-doubles"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Triples:</td>
+                  <td>
+                     <div id="final-triples"></div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Tetris:</td>
+                  <td>
+                     <div id="final-num-tetris"></div>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="game-over-content">
+            <button type="button" id="play-again-button">Play again!</button>
+         </div>
+      </div>
+         <p><b><a href="../index.html" style="color: #9390a9; font-size: 12px; text-decoration: underline;">Press me to return to games</a></b></p>
+   </body>
+   <script src="tetris.js" charset="utf-8"></script>
+</html>

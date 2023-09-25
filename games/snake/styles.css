@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: center;
+  background-color: #191724;
+  color: #9390a9;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-family: "Press Start 2p", Arial;
+  border: none;
+  background-color: #ee6c4d;
+  padding: 12px;
+  margin: 5px, 5px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #ee6c4d;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: url(snakeHover.png), auto;
+  color: #98c1d9;
+}
