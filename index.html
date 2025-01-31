@@ -1,18 +1,14 @@
 <!---// cameronos.github.io --->
 <!---// (c) 2024 Orange Computers Ltd. --->
-<!---// watch?v=evHzmv6kD1A --->
+<!---// watch?v=n8JcZZWPzQQ --->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Overpass Mono' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <!--Meta tags start-->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Analog audio engineer/audiophile and hobbist full-stack developer from Davenport, Florida" />
     <meta name="author" content="Cameron Koehler" />
@@ -26,184 +22,13 @@
     <meta property="og:site_name" content="cameronos.github.io" />
     <meta property="og:type" content="website" />
     <!--Img-->
-      <meta name="image" content="https://cameronos.github.io/img/embed.png" />
       <meta name="og:image" content="https://cameronos.github.io/img/embed.png" />
       <meta name="twitter:image" content="https://cameronos.github.io/img/embed.png" />
       <!--EndImgs-->
     <div class="circle" id="cursor-circle"></div>
     <script src="script.js"></script>
     <title>Home - cameronos</title>
-    <style>
-      a:link {
-        color: #0094FF;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a:visited {
-        color: #96D3FF;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      body {
-        background-color: #0b0b0b;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        /* Change this to flex-start */
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        font-family: 'Red Hat Mono', monospace;
-        font-size: 13px;
-        color: #dcdcdc;
-        overflow: hidden;
-      }
-
-      .audioimg {
-        position: fixed;
-        height: 186px;
-        top: 374px;
-        left: 53%;
-        rotate: 3deg;
-        box-shadow: 0px 0px 7px #645e8e;
-      }
-
-      .centered-div {
-        width: 576px;
-        /* Set the width of the div */
-        max-width: 90%;
-        /* Ensure it fits on small screens */
-        position: fixed;
-        /* Position the div fixed relative to the viewport */
-        top: 50%;
-        /* Center the div vertically */
-        left: 50%;
-        /* Center the div horizontally */
-        transform: translate(-50%, -50%);
-        /* Center the div both horizontally and vertically */
-        padding: 30px;
-        /* Optional: Add some padding */
-        z-index: 1000;
-        /* Ensure it stays above other elements */
-      }
-
-      .program {
-        margin-top: 15px;
-        margin-bottom: -8px;
-        font-family: 'Overpass Mono', monospace;
-        font-size: 14px;
-      }
-
-      .footer {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-family: 'Overpass Mono', monospace;
-        font-size: 10px;
-        color: grey;
-      }
-
-      .footer_img {
-        margin-top: 5px;
-      }
-
-      .intro {
-        margin-bottom: 15px;
-      }
-
-      .program_end {
-        margin-bottom: 15px;
-      }
-
-      .circle {
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border: 2px solid white;
-        /* Default border color */
-        border-radius: 50%;
-        position: absolute;
-        pointer-events: none;
-        /* Allows the cursor to interact with elements below the circle */
-        transition: transform 0.1s ease, border-color 0.3s ease;
-        /* Add a smooth transition effect */
-      }
-
-      .avatar {
-        border-radius: 50%;
-      }
-
-      .avatarsection {
-        font-family: 'Overpass Mono', monospace;
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        /* Stack elements vertically */
-        align-items: center;
-        /* Center elements horizontally */
-      }
-
-      .avatarwrapper {
-        display: flex;
-        align-items: center;
-        /* Center the avatar and username vertically */
-        font-weight: bold;
-        font-family: 'Ubuntu Mono', monospace;
-        font-size: 24px;
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
-
-      .username {
-        margin-left: 10px;
-        /* Space between the avatar and username */
-        text-shadow: 0 0 30px #4d32bc;
-        background-image: linear-gradient(#ffffff, #645e8e);
-        color: transparent;
-        background-clip: text;
-      }
-
-      .hearts {
-        display: flex;
-        justify-content: center;
-        /* Center the hearts horizontally */
-        margin-top: -20px;
-        /* Space between the username and hearts */
-        margin-left: 10px;
-        gap: 5px;
-      }
-
-      #easterEggImage {
-        cursor: pointer;
-      }
-
-      @media (max-width: 768px) {
-        body {
-          cursor: none;
-          font-size: 12px;
-        }
-
-        .centered-div {
-          width: 90%;
-          /* Make the div responsive on mobile */
-          padding: 20px;
-          /* Reduce padding for mobile */
-          font-size: 12px;
-          /* Adjust font size for readability */
-          overflow: hidden;
-        }
-
-        .circle {
-          display: none;
-        }
-
-        .audioimg {
-          display: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="homepage.css">
   </head>
   <body>
     <audio id="pop-audio" src="pop.mp3"></audio>
@@ -211,7 +36,7 @@
     <div class="centered-div">
       <div class="avatarsection">
         <div class="avatarwrapper">
-          <img src="https://github.com/cameronos.png" class="avatar" style="width:50px">
+          <img src="https://github.com/cameronos.png" class="avatar" style="width:50px" alt="Profile picture of Cameron">
           <span class="username">cameronos</span>
         </div>
         <!-- New container for the hearts -->
@@ -226,7 +51,7 @@
         <br>I typically work on video game modifications, or my own operating system <a href="https://github.com/cameronos/cameronOSrepo" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">CameronOS</a>. I enjoy using a set of different programming languages.
       </div>
       <hr>
-      <div class="program">Programming language skillset</div>
+      <div class="program"><b>Programming language skillset</b></div>
       <br>
       <div class="program_end">
         <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
@@ -264,11 +89,11 @@
         </a>
       </div>
       <hr>
-      <div class="program">Audiophile</div>
-      <br> I have a <A HREF="https://www.discogs.com/user/cameronkoehler001/collection" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">large collection of records</a>, and repair reel-to-reel tape machines. <br>
+      <div class="program"><b>Audiophile</b></div>
+      <br> I have a large <a href="https://www.discogs.com/user/cameronkoehler001/collection" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">collection of records</a>, and repair <a href="https://www.otari.com/support/vintage/mx5050/spec.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">reel-to-reel tape machines</a>. <br>
       <br>
       <div class="audioimg">
-        <img src="img/audiosetup.jpg" width=250px>
+        <img src="img/audiosetup.jpg" width=250px alt="OTARI MX5050 BII Tape Recorder" loading="lazy">
       </div> My setup is as follows:- <br>
       <div class="program_end"> * Fluance RT-83 (w/ Ortofon 2M Red) <br> * Pioneer CT-W500 <br> * Otari MX5050 BII <br> * Sony STR-DH190 <br> * Audio-Technica MH50X <br>* Realistic 999<br>
         <br> I am also currently repairing:- <br>
