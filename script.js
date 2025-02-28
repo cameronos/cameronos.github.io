@@ -1,3 +1,43 @@
+// easterEgg.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get references to the image and audio elements
+    const easterEggImage = document.getElementById('easterEggImage');
+    const easterEggAudio = document.getElementById('easterEggAudio');
+
+    // Variable to track whether the audio is playing or paused
+    let isAudioPlaying = false;
+
+    // Function to toggle audio playback
+    function toggleAudio() {
+        if (isAudioPlaying) {
+            if (easterEggAudio.currentTime === 0) {
+                // If the current time is at the beginning, it's a restart
+                easterEggAudio.pause();
+                console.log('Audio paused and restarted.');
+            } else {
+                // If the current time is not at the beginning, just pause
+                easterEggAudio.pause();
+                console.log('Audio paused.');
+            }
+            isAudioPlaying = false;
+        } else {
+            easterEggAudio.play();
+            console.log('Audio played.');
+            isAudioPlaying = true;
+        }
+    }
+
+    // Add an event listener to the audio element to detect when it has finished playing
+    easterEggAudio.addEventListener('ended', function() {
+        console.log('Audio ended.');
+        isAudioPlaying = false; // Reset the playback state when the audio finishes
+    });
+
+    // Add a click event listener to the image
+    easterEggImage.addEventListener('click', toggleAudio);
+});
+
 //cursor start
 const cursorCircle = document.getElementById('cursor-circle');
 const lagFactor = 0.2; // Adjust the lag factor as needed
@@ -20,7 +60,7 @@ document.addEventListener('mousemove', (e) => {
 
     // Check if the circle is within #rcorners1
     const rcorners1 = document.getElementById('rcorners1');
-    const rcorners1Rect = rcorners1.getBoundingClientRect();
+    //const rcorners1Rect = rcorners1.getBoundingClientRect();
     
     if (
         currentX >= rcorners1Rect.left &&
@@ -38,40 +78,28 @@ document.addEventListener('mousemove', (e) => {
 //end cursor
 
 //audio
-// Define a flag to control navigation
-var allowNavigation = false;
+// Add this section to handle "pop" sound on all links
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        // Play the pop sound
+        var audio = document.getElementById('pop-audio');
+        audio.play();
+        
+        // Delay navigation (if needed)
+        navigateAfterDelay(this.href, 300);
+        
+        // Prevent the default link behavior (optional if you want the delay to be noticed)
+        event.preventDefault();
+    });
+});
 
-// Audio
-// Define a flag to control navigation
+// Audio function to handle the navigation delay
 var allowNavigation = true;
 
-// Function to play audio
-function playAudio(url) {
-  var audio = new Audio(url);
-  audio.play();
-  audio.addEventListener('ended', function() {
-    allowNavigation = true;
-  });
-}
-
-// Function to navigate after delay
 function navigateAfterDelay(url, delay) {
-  setTimeout(function() {
-    if (allowNavigation) {
-      window.location.href = url;
-    }
-  }, delay);
+    setTimeout(function() {
+        if (allowNavigation) {
+            window.location.href = url;
+        }
+    }, delay);
 }
-
-// Function to handle link clicks on mobile
-function handleMobileLinkClick(event, url) {
-  event.preventDefault();
-  playAudio('pop.mp3');
-  navigateAfterDelay(url, 100);
-  allowNavigation = false; // Prevent further navigation until audio finishes
-}
-
-// Add an event listener to set allowNavigation to false when the page is unloaded
-window.addEventListener('beforeunload', function() {
-  allowNavigation = false;
-});

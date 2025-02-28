@@ -1,149 +1,57 @@
-<!---// cameronos.github.io --->
-<!---// (c) 2024 Orange Computers Ltd. --->
-<!---// watch?v=n8JcZZWPzQQ --->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Meta tags start-->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Analog audio engineer/audiophile and hobbist full-stack developer from Davenport, Florida" />
-    <meta name="author" content="Cameron Koehler" />
+    <title>Home - cameronos</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="img/favicon.png" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@cameronos_" />
-    <meta name="twitter:creator" content="@cameronos_" />
-    <meta name="theme-color" content="#0061CE" />
-    <meta property="og:site_name" content="cameronos.github.io" />
-    <meta property="og:type" content="website" />
-    <!--Img-->
-      <meta name="og:image" content="https://cameronos.github.io/img/embed.png" />
-      <meta name="twitter:image" content="https://cameronos.github.io/img/embed.png" />
-      <!--EndImgs-->
-    <div class="circle" id="cursor-circle"></div>
-    <script src="script.js"></script>
-    <title>Home - cameronos</title>
-    <link rel="stylesheet" href="homepage.css">
-  </head>
-  <body>
+    <meta name="description" content="Full-stack software engineer, cybersecurity major">
+    <meta name="theme-color" content="#00613E" />
+    <meta name="og:image" content="https://cameronos.github.io/img/embed.png" />
+    <meta name="twitter:image" content="https://cameronos.github.io/img/embed.png" />
     <audio id="pop-audio" src="pop.mp3"></audio>
-    <audio id="easterEggAudio" src="egg.mp3"></audio>
-    <div class="centered-div">
-      <div class="avatarsection">
-        <div class="avatarwrapper">
-          <img src="https://github.com/cameronos.png" class="avatar" style="width:50px" alt="Profile picture of Cameron">
-          <span class="username">cameronos</span>
-        </div>
-        <!-- New container for the hearts -->
-        <div class="hearts">
-          <img src="img/hgreen.png" width="15">
-          <img src="img/hyellow.png" width="15">
-          <img src="img/hred.png" width="15">
-        </div>
-      </div>
-      <div class="intro">
-        <br>A full-stack developer & cybersecurity major based in Fort Collins, Colorado. <br>
-        <br>I typically work on video game modifications, or my own operating system <a href="https://github.com/cameronos/cameronOSrepo" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">CameronOS</a>. I enjoy using a set of different programming languages.
-      </div>
-      <hr>
-      <div class="program"><b>Programming language skillset</b></div>
-      <br>
-      <div class="program_end">
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/html5.svg" width=20px>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/css3.svg" width=20px>
-        </a>
-        <a href="https://www.lua.org/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/lua.svg" width=20px>
-        </a>
-        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/csharp.png" width=20px>
-        </a>
-        <a href="https://www.javascript.com/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/js.svg" width=20px>
-        </a>
-        <a href="https://www.java.com/en/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/java.png" width=20px>
-        </a>
-        <a href="https://www.python.org/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/python.png" width=20px>
-        </a>
-        <a href="https://www.cloudflare.com/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/cloudflare.png" width=20px>
-        </a>
-        <a href="https://www.microsoft.com/en-us/windows-server" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/windows.svg" width=20px>
-        </a>
-        <a href="https://ubuntu.com/server" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/ubuntu.svg" width=20px>
-        </a>
-        <a href="https://fabricmc.net/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-          <img src="img/icon/fabricmc.png" width=20px>
-        </a>
-      </div>
-      <hr>
-      <div class="program"><b>Audiophile</b></div>
-      <br> I have a large <a href="https://www.discogs.com/user/cameronkoehler001/collection" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">collection of records</a>, and repair <a href="https://www.otari.com/support/vintage/mx5050/spec.html" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">reel-to-reel tape machines</a>. <br>
-      <br>
-      <div class="audioimg">
-        <img src="img/audiosetup.jpg" width=250px alt="OTARI MX5050 BII Tape Recorder" loading="lazy">
-      </div> My setup is as follows:- <br>
-      <div class="program_end"> * Fluance RT-83 (w/ Ortofon 2M Red) <br> * Pioneer CT-W500 <br> * Otari MX5050 BII <br> * Sony STR-DH190 <br> * Audio-Technica MH50X <br>* Realistic 999<br>
-        <br> I am also currently repairing:- <br>
-        <br> * Sony TC-399
-      </div>
-      <hr>
-      <div class="footer">
-        <center>© 2024 Orange Computers Ltd. <br> All rights reserved. <div class="footer_img">
-            <a href="https://github.com/cameronos/cameronos.github.io" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-              <img src="img/github.png" width="20">
-            </a>
-            <a href="https://cameronos.github.io/quarrybank/" onclick="playAudio('pop.mp3'); navigateAfterDelay(this.href, 300); return false;">
-              <img src="img/quarrybank.png" width="20">
-            </a>
-            <img id="easterEggImage" src="img/music.png" style="width: 20px; height: auto;">
-          </div>
-        </center>
-      </div>
-  </body>
-  <script>
-    // Get references to the image and audio elements
-    const easterEggImage = document.getElementById('easterEggImage');
-    const easterEggAudio = document.getElementById('easterEggAudio');
-    // Variable to track whether the audio is playing or paused
-    let isAudioPlaying = false;
-    // Function to toggle audio playback
-    function toggleAudio() {
-      if (isAudioPlaying) {
-        if (easterEggAudio.currentTime === 0) {
-          // If the current time is at the beginning, it's a restart
-          easterEggAudio.pause();
-          console.log('Audio paused and restarted.');
-        } else {
-          // If the current time is not at the beginning, just pause
-          easterEggAudio.pause();
-          console.log('Audio paused.');
-        }
-        isAudioPlaying = false;
-      } else {
-        easterEggAudio.play();
-        console.log('Audio played.');
-        isAudioPlaying = true;
-      }
-    }
-    // Add an event listener to the audio element to detect when it has finished playing
-    easterEggAudio.addEventListener('ended', function() {
-      console.log('Audio ended.');
-      isAudioPlaying = false; // Reset the playback state when the audio finishes
-    });
-    // Add a click event listener to the image
-    easterEggImage.addEventListener('click', toggleAudio);
-  </script>
+    <div class="circle" id="cursor-circle"></div>
+</head>
+<body>
+<!----start main page--->
+<div class="container">
+<center><img src="https://github.com/cameronos.png" class="avatar" style="width:80px" alt="Profile picture of Cameron"></center>
+<h1 class="hello">hi, my name is Cameron Koehler</h1>
+<p class="about">i'm a full-stack software developer, studying Cybersecurity at<br><a href="https://www.frontrange.edu/index.html" class="pop-sound-link">Front Range Community College</a>.</p>
+<hr>
+<h1 class="lang_text">languages</h1>
+<div class="lang">
+  <div class="lang_child"> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="pop-sound-link" target="_blank"><img src="img/html5.svg"> </a></div>
+  <div class="lang_child"> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="pop-sound-link" target="_blank"><img src="img/css3.svg"> </a></div>
+  <div class="lang_child"> <a href="https://www.lua.org/" class="pop-sound-link" target="_blank"><img src="img/lua.svg"> </a></div>
+  <div class="lang_child"> <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" class="pop-sound-link" target="_blank"><img src="img/csharp.svg"> </a></div>
+  <div class="lang_child"> <a href="https://www.learn-c.org/" class="pop-sound-link" target="_blank"><img src="img/c.svg"> </a></div>
+  <div class="lang_child"> <a href="https://www.oracle.com/java/" class="pop-sound-link" target="_blank"><img src="img/java.svg"> </a></div>
+  <div class="lang_child"> <a href="https://www.python.org/" class="pop-sound-link" target="_blank"><img src="img/python.svg"> </a></div>
+  <div class="lang_child"> <a href="https://learn.microsoft.com/en-us/windows-server/" class="pop-sound-link" target="_blank"><img src="img/windows.svg"> </a></div>
+  <div class="lang_child"> <a href="https://ubuntu.com/server" class="pop-sound-link" target="_blank"><img src="img/ubuntu.svg"> </a></div>
+  <div class="lang_child"> <a href="https://www.cloudflare.com/" class="pop-sound-link" target="_blank"><img src="img/cloudflare.svg"> </a></div>
+  <div class="lang_child"> <a href="https://fabricmc.net/" class="pop-sound-link" target="_blank"><img src="img/fabricmc.png"> </a></div>
+</div>
+<hr>
+<div class="links">
+<div class="links_child"><a href="https://github.com/cameronos/" class="pop-sound-link" target="" rel="" style="text-decoration: underline;" >github</a></div>
+<div class="links_child"><a href="projects.html" class="pop-sound-link" target="" rel="" style="text-decoration: underline;" >projects</a></div>
+<div class="links_child"><a href="mailto:camekommd@gmail.com" class="pop-sound-link" target="" rel="" style="text-decoration: underline;" >contact</a></div>
+<div class="links_child"><a href="https://www.linkedin.com/in/cameron-koehler-4605b7193/" class="pop-sound-link" target="" rel="" style="text-decoration: underline;" >linkedin</a></div>
+<div class="links_child"><a href="https://cameronos.github.io/quarrybank/" class="pop-sound-link" target="" rel="" style="text-decoration: underline;" >quarrybank</a></div>
+<div class="links_child"><a href="https://github.com/cameronos/cameronos.github.io" class="pop-sound-link" target="" rel="" style="text-decoration: underline;" >source</a></div>
+</div>
+<!---end main page--->
+<script src="script.js"></script> <!--loading egg here, lazy browsers dont need to skip important shit and run a massive .mp3 load for no reason.-->
+<audio id="easterEggAudio" src="egg.mp3"></audio>
+<div class="footer">
+        <center>© 2025 Orange Computers Ltd. <br> All rights reserved.<br><br>
+        <img id="easterEggImage" src="img/music.png" style="width: 20px; height: auto;">
+</div>
+<!---->
+</body>
 </html>

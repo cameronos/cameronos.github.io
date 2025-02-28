@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="135.46666mm"
+   height="135.46666mm"
+   viewBox="0 0 135.46666 135.46666"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="js.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.18462928"
+     inkscape:cx="1085.9599"
+     inkscape:cy="-43.330072"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1233" /><defs
+     id="defs2" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(628.63944,-57.340364)"><g
+       id="g144"
+       transform="matrix(0.26458333,0,0,0.26458333,-188.52626,63.749181)"><g
+         id="g1233"
+         transform="translate(-722.85022,92.076388)"><g
+           id="g7699"
+           transform="translate(-940.56971,-116.29869)"><path
+             d="M 0,0 H 512 V 512 H 0"
+             fill="#f7df1e"
+             id="path7687"
+             style="fill:#0d0d0d;fill-opacity:1" /><path
+             d="m 324,370 q 17,29 45,29 35,0 35,-27 c 0,-11 -15,-21 -39,-31 q -67,-22 -66,-75 c 0,-36 27,-64 70,-64 q 48,0 68,39 l -37,24 q -12,-22 -31,-21 -22,1 -23,21 c 0,14 9,20 39,33 43,17 67,36 67,77 q -3,65 -79,67 -63,0 -89,-49 z m -170,4 c 8,13 13,25 33,25 q 24,0 24,-30 V 203 h 48 v 164 q -1,71 -72,72 -53,-1 -72,-44 z"
+             id="path7689"
+             style="fill:#f9f9f9" /></g></g></g></g></svg>

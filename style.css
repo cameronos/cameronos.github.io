@@ -1,0 +1,181 @@
+a {
+  color: #1b31af; 
+}
+
+a:hover {
+    color: #5a7dff; /* Lighter blue on hover */
+}
+
+a:focus {
+    outline: 2px solid #5a7dff;
+}
+
+a:visited {
+  color: black; 
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    color: #0b0b0b;
+}
+
+.avatar {
+  border-radius: 50%;
+  justify-content: center;
+  margin-bottom: -1rem;
+  box-shadow: 0 0 5px rgb(90,90,90);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.avatar:hover {
+    box-shadow: 0 0 15px rgba(40, 80, 230, 0.5);
+}
+
+.hello {
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.lang_text {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    margin-top: 0rem;
+    font-style: italic;
+}
+
+.about {
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.lang {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.lang_child {
+    margin-right: 0.8rem;
+    margin-bottom: 0rem;
+    font-size: 2rem;
+}
+
+.lang_child img {
+  width: 20px; 
+}
+
+
+.links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.links_child {
+    margin-right: 1rem;
+}
+
+.links, .lang {
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 1.5rem;
+    max-width: 31em;
+    margin: auto;
+}
+
+.footer {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: grey;
+    font-size: 0.7rem;
+}
+
+/* projects.html */
+.proj_title {
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.proj_name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    margin-top: 0rem;
+}
+
+.github_link {
+    font-size: 1rem;
+}
+
+.proj_lang {
+    font-style: italic;
+    margin-bottom: .3rem;
+    margin-top: -0.3rem;
+}
+
+.proj_img {
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: right;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.proj_img:hover {
+    transform: scale(1.2); /* Enlarge image when hovered */
+    animation: shake 0.5s infinite; /* Apply continuous rotation animation */
+    box-shadow: 0 0 15px rgba(40, 80, 230, 0.5);
+}
+
+/* Define the shake animation */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .lang, .links {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .lang_child, .links_child {
+        margin-right: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Custom Cursor Circle */
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #0f0f0f;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: transform 0.15s ease-out, background-color 0.15s ease-out;
+}
