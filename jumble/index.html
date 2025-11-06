@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Designed for the Jumble module mod in Keep Talking and Nobody Explodes -->
+<!-- Created by cameronos.github.io -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jumble's Number</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="tape"></div>
+
+    <div id="numberDisplay" class="number-strip">
+      <div class="number-inner">--</div>
+    </div>
+
+    <div class="timer" id="timerText">Next update in ???</div>
+    <div class="timer-bar">
+      <div id="timerFill" class="timer-fill"></div>
+    </div>
+
+    <div class="buttons">
+      <div class="btn red">A</div>
+      <div class="btn yellow">B</div>
+      <div class="btn green">C</div>
+      <div class="btn blue">D</div>
+    </div>
+
+    <div class="footer">
+      <i>Mr. Rumble says: Use me at bomb initialization!</i>
+    </div>
+  </div>
+
+  <audio id="tickSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" autoplay></audio>
+  <script src="script.js"></script>
+</body>
+</html>
