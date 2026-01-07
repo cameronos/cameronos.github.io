@@ -1,68 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>File Storage</title>
-    <style>
-        body {
-            background-color: #c0c0c0; /* classic grey background */
-            color: #000000;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 14px;
-            margin: 20px;
-        }
+<meta charset="UTF-8">
+<title>File Storage</title>
+<style>
+/* General Body */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    color: #0b0b0b;
+    font-family: "Times New Roman", Times, serif;
+}
 
-        h1 {
-            color: #000080; /* dark blue title */
-        }
+/* Container */
+.container {
+    padding: 2rem;
+    max-width: 32em;
+    margin: auto;
+}
 
-        a {
-            color: #0000ff;
-            text-decoration: none;
-        }
+/* Headings */
+h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+/* Info Tooltip */
+.info-box {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    background-color: #1b31af;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    cursor: default;
+    position: relative;
+}
 
-        hr {
-            border: 1px solid #000000;
-        }
+.info-box::after {
+    content: "most files listed here are for easy access to put onto UNIX workstations";
+    position: absolute;
+    left: 22px;
+    top: -5px;
+    width: 200px; /* limit width */
+    white-space: normal; /* allow wrapping */
+    background-color: #ffffff;
+    color: #0b0b0b;
+    border: 1px solid #cccccc;
+    padding: 5px 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+}
 
-        .file-list {
-            margin-top: 10px;
-        }
+.info-box:hover::after {
+    opacity: 1;
+}
 
-        .file-list li {
-            margin-bottom: 5px;
-        }
 
-        .footer {
-            margin-top: 40px;
-            font-size: 12px;
-        }
-    </style>
+/* Links */
+a {
+    color: #1b31af;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #5a7dff;
+}
+
+a:visited {
+    color: black;
+}
+
+a:focus {
+    outline: 2px solid #5a7dff;
+}
+
+/* File List */
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.file-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: grey;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer img {
+    width: 20px;
+    height: auto;
+    margin-right: 6px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+        max-width: 95%;
+    }
+
+    .file-list li {
+        font-size: 1rem;
+    }
+}
+</style>
 </head>
 <body>
-    <h1>File Storage Area</h1>
-    <p>Simple storage page for downloading files onto my UNIX systems (and others).</p>
+<div class="container">
+    <h1>
+        files
+        <span class="info-box">?</span>
+    </h1>
     <hr>
-  
     <ul class="file-list">
         <li><a href="curl.pkg">curl.pkg</a></li>
         <li><a href="libidn.pkg">libidn.pkg</a></li>
         <li><a href="wget.pkg">wget.pkg</a></li>
-        <li><a href="firefoxicon.png">Firefox icon</a></li>
+        <li><a href="firefoxicon.png">firefoxicon.png</a></li>
         <li><a href="qual8.wav">qual8.wav</a></li>
         <li><a href="sailor16.wav">sailor16.wav</a></li>
         <li><a href="sailor8.aiff">sailor8.aiff</a></li>
         <li><a href="sailorSun.mp3">sailorSun.mp3</a></li>
     </ul>
-    
     <hr>
-    
-    <div class="footer">
-        &copy; 2025 Orange Computers All rights reserved.<br>
-    </div>
+    <center><a href="../index.html">back</a></center>
+<div class="footer">
+        <center>© 2025 Orange Computers Ltd. <br> All rights reserved.<br><br>
+        <img id="easterEggImage" src="../img/sunlogo.png" style="width: 20px; height: auto;">
+</div>
+</div>
 </body>
 </html>

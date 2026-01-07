@@ -179,3 +179,10 @@ body, html {
   pointer-events: none;
   transition: transform 0.15s ease-out, background-color 0.15s ease-out;
 }
+
+/* Hide cursor circle on touch devices / small screens */
+@media (pointer: coarse) {
+  .circle {
+    display: none !important;
+  }
+}
