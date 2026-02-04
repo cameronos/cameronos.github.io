@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sunwm - cameronos</title>
+   <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta name="theme-color" content="#00613E" />
+    <style>
+        /* General Body */
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: #eeeeee;
+            color: #0b0b0b;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Container */
+        .container {
+            padding: 2rem;
+            max-width: 50em;
+            margin: auto;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Info Tooltip */
+        .info-box {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 0.5rem;
+            border-radius: 50%;
+            background-color: #1b31af;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+            line-height: 16px;
+            cursor: default;
+            position: relative;
+        }
+
+        .info-box::after {
+            content: "X11 window manager inspired by SunOS/Solaris";
+            position: absolute;
+            left: 22px;
+            top: -5px;
+            width: 220px;
+            white-space: normal;
+            background-color: #ffffff;
+            color: #0b0b0b;
+            border: 1px solid #cccccc;
+            padding: 5px 8px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease-in-out;
+            z-index: 10;
+        }
+
+        .info-box:hover::after {
+            opacity: 1;
+        }
+
+        /* Links */
+        a {
+            color: #1b31af;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #5a7dff;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:focus {
+            outline: 2px solid #5a7dff;
+        }
+
+        /* Paragraphs */
+        p {
+            line-height: 1.6;
+            margin: 0.75rem 0;
+        }
+
+        /* Code blocks */
+        pre {
+            background-color: #f5f5f5;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        th {
+            background-color: #f5f5f5;
+            font-weight: normal;
+        }
+
+        /* Footer */
+        .footer {
+            font-style: italic;
+            margin-top: 0.5rem;
+            color: grey;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .footer img {
+            width: 20px;
+            height: auto;
+            margin-top: 6px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            sunwm
+            <span class="info-box">?</span>
+        </h1>
+        <hr>
+
+        <p>a window manager inspired by the SunOS OpenLook window manager, written while following the <a href="https://www.cis.upenn.edu/~lee/06cse480/data/cstyle.ms.pdf">C Style and Coding Standards for SunOS</a>.</p>
+
+        <center>
+            <a href="img/sunwm_sc.png" target="_blank">
+                <img src="img/sunwm_sc.png" alt="sunwm screenshot" style="max-width: 100%; height: auto; margin: 1.5rem 0; border: 1px solid #cccccc;">
+            </a>
+        </center>
+
+        <h2>features</h2>
+<p>
+            • Motif-inspired 3D windows, maximize and close<br>
+            • Title bar dragging, ALT-TAB window focus management<br>
+            • Configurable keyboard shortcuts for apps<br>
+            • Right-click root menu<br>
+            • 8-direction window resizing (edges and corners)<br>
+            • .sunrc customizable menu, shortcuts, and color scheme<br>
+            • Click-to-focus (focus-follows-mouse = basura)<br>
+        </p>
+
+        <h2>installation (for <a href="https://www.debian.org/"><img src="img/debian.svg" width=15px></img></a> systems)</h2>
+        <h3>dependencies</h3>
+        <p>required X11 libraries:</p>
+        <pre><code>sudo apt-get install libx11-dev xorg-dev build-essential</code></pre>
+
+        <h3>building</h3>
+        <pre><code>make
+sudo make install</code></pre>
+
+        <h3>running</h3>
+        <p>add to your <code>~/.xinitrc</code>:</p>
+        <pre><code>exec sunwm</code></pre>
+        <p>then start X:</p>
+        <pre><code>startx</code></pre>
+
+        <h2>configuration</h2>
+        <p>sunwm reads configuration from <code>~/.sunrc</code> on startup.</p>
+
+        <h3>example ~/.sunrc</h3>
+        <pre><code>color.background:       #E2E0DB
+color.title_active:     #5A52C6
+color.title_inactive:   #7B73D1
+color.title_text:       #312C6B
+color.border_light:     #837AD6
+color.border_dark:      #3F38A8
+
+Title: Debian
+
+Terminal: xterm -bg black -fg white &; key.Ctrl+Alt+T
+Browser: firefox-esr &; key.Ctrl+Alt+B
+File Manager: xfile &; key.Ctrl+E
+CD Burner: k3b &; key.Ctrl+Alt+D
+Qbittorrent: qbittorrent &
+PuTTY: putty &
+
+Graph: xload &
+Clock: xclock &
+Calculator: xcalc &
+
+Refresh: refresh
+Exit: exit
+
+border_width: 4
+</code></pre>
+
+        <h2>default keybindings</h2>
+        <table>
+            <tr>
+                <th>key</th>
+                <th>action</th>
+            </tr>
+            <tr>
+                <td><code>Alt+Tab</code></td>
+                <td>switch between windows</td>
+            </tr>
+            <tr>
+                <td><code>Right-click (root)</code></td>
+                <td>open application menu</td>
+            </tr>
+            <tr>
+                <td><code>Drag title bar</code></td>
+                <td>move window</td>
+            </tr>
+            <tr>
+                <td><code>Drag edges/corners</code></td>
+                <td>resize window (8 directions)</td>
+            </tr>
+        </table>
+
+        <h2>window controls</h2>
+        <p>
+            <strong>close button:</strong> right button in title bar (×)<br>
+            <strong>maximize button:</strong> left button in title bar (□)
+        </p>
+
+        <h2>architecture</h2>
+        <p>sunwm is built with modularity, following SunOS coding standards:</p>
+        <p>
+            <code>sunwm.c</code> - main window manager initialization and event loop<br>
+            <code>client.c</code> - client window management (framing, focus, decorations)<br>
+            <code>events.c</code> - X11 event handlers (key press, mouse, expose)<br>
+            <code>menu.c</code> - root menu system, .sunrc configuration parsing<br>
+            <code>sunwm.h</code> - shared header with structures and constants
+        </p>
+
+        <h2>download</h2>
+        <p><a href="cdn/sunwm.tar">sunwm.tar</a> (source code archive)</p>
+
+        <hr>
+        <center><a href="projects.html">back</a></center>
+        <div class="footer">
+            © 2026 Orange Computers Ltd.<br>
+            All rights reserved.<br><br>
+            <img src="img/sunlogo.png">
+        </div>
+    </div>
+</body>
+</html>
