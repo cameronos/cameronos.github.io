@@ -1,87 +1,301 @@
-<!---// cameronos.github.io/quarrybank --->
-<!---// (c) 2025 Quarrybank Media Production. Site created by Orange Computers Ltd. --->
-<!---// watch?v=z46WE78J44 --->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--Meta tags start-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quarrybank Media Production</title>
-    <meta name="description" content="Quarrybank Media Production is a technical electronics and creative services company.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Cameron Koehler" />
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="favicon.png" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@cameronos_" />
-    <meta name="twitter:creator" content="@cameronos_" />
-    <meta name="theme-color" content="#7B0E07" />
-    <meta property="og:site_name" content="cameronos.github.io/Quarrybank" />
-    <meta property="og:type" content="website" />
-    <!--Meta tags end-->
-    <!--Img-->
-      <meta name="og:image" content="https://cameronos.github.io/quarrybank/headerhome.png" />
-      <meta name="twitter:image" content="https://cameronos.github.io/quarrybank/headerhome.png" />
-    <!--EndImgs-->
-  </head>
-  <body>
-    <div class="container">
-      <div class="sidebar">
-        <iframe src="menu.html" frameborder="0" width="100%" height="100%"></iframe>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Quarrybank Media Production is a technical electronics and creative services company.">
+  <meta name="author" content="Cameron Koehler">
+  <meta name="theme-color" content="#7B0E07">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cameronos_">
+  <meta name="twitter:image" content="https://cameronos.github.io/quarrybank/headerhome.png">
+  <meta property="og:site_name" content="cameronos.github.io/Quarrybank">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cameronos.github.io/quarrybank/headerhome.png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <title>Quarrybank Media Production</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="shell">
+
+  <!-- HEADER -->
+  <div id="header">
+    <div id="header-inner">
+      <div id="logo-area">
+        <img src="img/qmblogo2.png" width="250">
       </div>
-      <div class="content">
-        <iframe src="home.html" frameborder="0" width="100%" height="100%" name="content"></iframe>
+      <div id="header-right">
+        <div class="hl">'sound you can feel'</div>
+        <div id="live-clock">--:--:-- --</div>
+        <div class="signal-bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
       </div>
     </div>
+  </div>
 
-    <style>
-      /* Global reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+  <!-- MARQUEE -->
+  <div id="marquee-bar">
+    <div class="mq-track">
+      <span class="hot">⚡ ARCS02 1kHz Oscillator — Available Now</span><span class="sep">◆</span>
+      <span>ARCS03 Reference Oscillator — In Development</span><span class="sep">◆</span>
+      <span>ARCT01 Calibration Tape — Datasheet Released</span><span class="sep">◆</span>
+      <span>Custom Cassettes with Full-Color J-Cards</span><span class="sep">◆</span>
+      <span>Reel-to-Reel Repairs &amp; Restoration — Otari Specialists</span><span class="sep">◆</span>
+      <span class="hot">⚡ ARCS02 1kHz Oscillator — Available Now</span><span class="sep">◆</span>
+      <span>ARCS03 Reference Oscillator — In Development</span><span class="sep">◆</span>
+      <span>ARCT01 Calibration Tape — Datasheet Released</span><span class="sep">◆</span>
+      <span>Custom Cassettes with Full-Color J-Cards</span><span class="sep">◆</span>
+      <span>Reel-to-Reel Repairs &amp; Restoration — Otari Specialists</span><span class="sep">◆</span>
+    </div>
+  </div>
 
-      body {
-        background-color: #000000;
-        color: #000000;
-        font-family: Arial, sans-serif;
-      }
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a class="nav-item active" onclick="return showPage('home',this)" href="#">🏠 Home</a>
+    <a class="nav-item" onclick="return showPage('whats-new',this)" href="#">📋 What's New</a>
+    <a class="nav-item" onclick="return showPage('products',this)" href="#">🔧 Products</a>
+    <a class="nav-item" onclick="return showPage('about',this)" href="#">ℹ About</a>
+    <a class="nav-item" href="mailto:csgocam123@gmail.com">✉ Contact</a>
+  </nav>
 
-      /* Layout styles */
-      .container {
-        display: flex;
-        height: 100vh;
-        overflow: hidden;
-      }
+  <!-- CONTENT -->
+  <div id="content-area">
 
-      .sidebar {
-        width: 164px;
-        background-color: #f4f4f4;
-      }
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <div class="sb-section">
+        <div class="sb-head">Quick Links</div>
+        <ul class="sb-links">
+          <li><a href="https://cameronos.github.io/quarrybank/docs/ARCS02.pdf" target="_blank">ARCS02 Datasheet</a></li>
+          <li><a href="https://cameronos.github.io/quarrybank/docs/ARCT01_pvcy.pdf" target="_blank">ARCT01 Datasheet</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1tn8DYlWV75Tc-EHo0Gs6tJLBV0-GslcVlWDcBL-xgYs/edit" target="_blank">Capacitor List</a></li>
+          <li><a href="mailto:camekommd@gmail.com">Contact Webmaster</a></li>
+        </ul>
+      </div>
+      <div class="sb-section">
+        <div class="sb-head">Products</div>
+        <ul class="sb-links">
+          <li><a onclick="return showPage('products',null)" href="#">ARCS02 Oscillator</a></li>
+          <li><a onclick="return showPage('products',null)" href="#">ARCT01 Cal. Tape</a></li>
+          <li><a onclick="return showPage('products',null)" href="#">Custom Cassettes</a></li>
+          <li><a onclick="return showPage('products',null)" href="#">R-t-R Repairs</a></li>
+        </ul>
+      </div>
+      <div class="sb-section">
+        <div class="sb-head">Notice</div>
+        <div class="sb-notice">
+          <strong>Ordering</strong>
+          To place an order, send us an e-mail. We respond within 1–3 business days.
+        </div>
+      </div>
+      <div class="sb-section">
+        <div class="sb-head">Best Viewed In</div>
+        <div class="sb-meta">800×600 or higher<br>🌐 IE6+ / Netscape 7+</div>
+      </div>
+    </aside>
 
-      .content {
-        flex-grow: 1;
-        overflow: auto;
-      }
+    <!-- MAIN PANEL -->
+    <main id="main-panel">
 
-      /* Responsive layout */
-      @media (max-width: 768px) {
-        .container {
-          flex-direction: column;
-        }
+      <!-- HOME -->
+      <section class="panel-section visible" id="page-home">
+        <div class="sec-heading">Welcome</div>
+        <div class="sec-rule"></div>
+        <p>Quarrybank Media Production is a specialist electronics and creative services company that specializes in repairing reel-to-reel tape recorders, assisting recording artists and production of reproducer calibration tapes. We are located in <a href="https://www.fcgov.com/">Fort Collins, Colorado</a>.</p><br>
+        <p>Our products enable optimal performance across vintage audio equipment, and enable artists and audiophiles to achieve great sonic ability when recording or playing back music.</p><br>
+        <p>Using our specialized techniques and equipment, we design, develop, and produce high-performance audio solutions, including calibration tapes for reel-to-reel tape recorders, artist recording services, and expert repairs for both vintage and modern stereo equipment.</p><br>
+        <p>Our work includes op-amp replacements and component adjustments, using high-quality electrical components sourced from trusted manufacturers like <a href="https://www.nichicon.com/en-us/">Nichicon</a>, <a href="https://ti.com/">Texas Instruments</a>, and <a href="https://www.vishay.com/">Vishay Intertechnology</a>.</p><br>
+        <p class="tm-notice">Quarrybank and the wave logo are NOT registered trademarks of Quarrybank Media Production and/or its subsidiaries.</p><br>
 
-        .sidebar {
-          width: 100%;
-          height: 200px;
-        }
+        <div class="sec-heading" style="font-size:14px;margin-bottom:4px;">Latest News</div>
+        <div class="sec-rule"></div>
 
-        .content {
-          height: calc(100vh - 200px);
-        }
-      }
-    </style>
-  </body>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/arcs03.png" alt="ARCS03"></div>
+          <div class="news-body">
+            <strong>ARCS03 Reference Oscillator <span class="badge-cs">COMING SOON</span></strong>
+            <p>Development has begun on our Revision 3 hardware. While the ARCS02 serves as a functional entry-level source, the upcoming Rev 3 is being engineered as a "super clean" 1kHz laboratory-grade reference for technicians requiring archival-level precision and ultra-low distortion.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/arcs02.png" alt="ARCS02"></div>
+          <div class="news-body">
+            <strong>ARCS02 Audio Reproducer Calibration Source <span class="badge-new">NEW</span></strong>
+            <p>Our foundational hardware signal source, specifically voiced for easy reproduction testing of audio equipment. <a href="https://cameronos.github.io/quarrybank/docs/ARCS02.pdf" target="_blank">View Datasheet »</a></p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/arct.png" alt="ARCT01"></div>
+          <div class="news-body">
+            <strong>ARCT01 Audio Reproducer Calibration Tape <span class="badge-new">NEW</span></strong>
+            <p>Our first product designed for reel-to-reel repairmen and studio consumers now has a full datasheet. <a href="https://cameronos.github.io/quarrybank/docs/ARCT01_pvcy.pdf" target="_blank">View Datasheet »</a></p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/nich.png" alt="Nichicon list"></div>
+          <div class="news-body">
+            <strong>Nichicon Alum-Electro Capacitor Reference List</strong>
+            <p>A compiled reference sheet for all capacitors in regular usage at Quarrybank. <a href="https://docs.google.com/spreadsheets/d/1tn8DYlWV75Tc-EHo0Gs6tJLBV0-GslcVlWDcBL-xgYs/edit?usp=sharing" target="_blank">Open in Google Sheets »</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT'S NEW -->
+      <section class="panel-section" id="page-whats-new">
+        <div class="sec-heading">What's New</div>
+        <div class="sec-rule"></div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/arcs03.png" alt="ARCS03"></div>
+          <div class="news-body">
+            <strong>ARCS03 Reference Oscillator <span class="badge-cs">COMING SOON</span></strong>
+            <p>Development has begun on our Revision 3 hardware. While the ARCS02 serves as a functional entry-level source, the upcoming Rev 3 is being engineered as a "super clean" 1kHz laboratory-grade reference for technicians requiring archival-level precision and ultra-low distortion.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/arcs02.png" alt="ARCS02"></div>
+          <div class="news-body">
+            <strong>ARCS02 Audio Reproducer Calibration Source <span class="badge-new">NEW</span></strong>
+            <p>Our foundational hardware signal source. <a href="https://cameronos.github.io/quarrybank/docs/ARCS02.pdf" target="_blank">View Datasheet »</a></p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/arct.png" alt="ARCT01"></div>
+          <div class="news-body">
+            <strong>ARCT01 Audio Reproducer Calibration Tape <span class="badge-new">NEW</span></strong>
+            <p>Full datasheet now available. <a href="https://cameronos.github.io/quarrybank/docs/ARCT01_pvcy.pdf" target="_blank">View Datasheet »</a></p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-thumb"><img src="news/nich.png" alt="Nichicon list"></div>
+          <div class="news-body">
+            <strong>Nichicon Alum-Electro Capacitor Reference List</strong>
+            <p>Compiled capacitor reference. <a href="https://docs.google.com/spreadsheets/d/1tn8DYlWV75Tc-EHo0Gs6tJLBV0-GslcVlWDcBL-xgYs/edit?usp=sharing" target="_blank">Open in Google Sheets »</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="panel-section" id="page-products">
+        <div class="sec-heading">Products &amp; Services</div>
+        <div class="sec-rule"></div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="prod-img"><img src="product/arcs02.png" alt="ARCS02"></div>
+            <h3>ARCS02 — Audio Reproducer Calibration Source</h3>
+            <p>1kHz oscillators engineered for level alignment and functional machine verification of vintage reel-to-reel equipment.</p>
+            <a class="btn-ghost" href="https://cameronos.github.io/quarrybank/docs/ARCS02.pdf" target="_blank">Datasheet</a>
+            <a class="btn-solid" href="mailto:camekommd@gmail.com">Order</a>
+          </div>
+          <div class="product-card">
+            <div class="prod-img"><img src="product/arct01.png" alt="ARCT01"></div>
+            <h3>ARCT01 — Audio Reproducer Calibration Tape</h3>
+            <p>15ips 250nWb/m calibration tapes on 7-inch reels. Designed for reel-to-reel repairmen and studio use.</p>
+            <a class="btn-ghost" href="https://cameronos.github.io/quarrybank/docs/ARCT01_pvcy.pdf" target="_blank">Datasheet</a>
+            <a class="btn-solid" href="mailto:camekommd@gmail.com">Order</a>
+          </div>
+          <div class="product-card">
+            <div class="prod-img"><img src="product/cass.png" alt="Custom cassette duplication"></div>
+            <h3>Custom Cassettes</h3>
+            <p>High-quality custom cassettes with personalized J-cards and full-color printing.</p>
+            <a class="btn-solid" href="mailto:camekommd@gmail.com">Inquire</a>
+          </div>
+          <div class="product-card">
+            <div class="prod-img"><img src="product/repair.png" alt="Reel to reel repair"></div>
+            <h3>Reel-to-Reel Repairs &amp; Restoration</h3>
+            <p>Specializing in Otari-manufactured machines. Direct connections with Otari Japan for genuine parts and historic schematics.</p>
+            <a class="btn-solid" href="mailto:camekommd@gmail.com">Get a Quote</a>
+          </div>
+        </div>
+
+        <hr class="rule">
+
+        <table class="spec-table">
+          <thead>
+            <tr><th>Product</th><th>Status</th><th>Specification</th><th>Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ARCS03 Oscillator</td><td class="status-dev">⟳ In Development</td><td>1kHz, lab-grade, ultra-low distortion</td><td>—</td></tr>
+            <tr><td>ARCS02 Oscillator</td><td class="status-ok">✓ Available</td><td>1kHz, level alignment grade</td><td><a href="https://cameronos.github.io/quarrybank/docs/ARCS02.pdf" target="_blank">Datasheet</a></td></tr>
+            <tr><td>ARCT01 Cal. Tape</td><td class="status-ok">✓ Available</td><td>15ips, 250nWb/m, 7-inch reel</td><td><a href="https://cameronos.github.io/quarrybank/docs/ARCT01_pvcy.pdf" target="_blank">Datasheet</a></td></tr>
+            <tr><td>Custom Cassettes</td><td class="status-ok">✓ Available</td><td>Full-color J-cards, custom duplication</td><td><a href="mailto:camekommd@gmail.com">Contact</a></td></tr>
+            <tr><td>R-t-R Repairs (Otari)</td><td class="status-ok">✓ Available</td><td>Mechanical &amp; electrical, genuine parts</td><td><a href="mailto:camekommd@gmail.com">Contact</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="panel-section" id="page-about">
+        <div class="sec-heading">About Quarrybank</div>
+        <div class="sec-rule"></div>
+        <div class="about-box">
+          <h3>Who We Are</h3>
+          <p>Quarrybank Media Production is a specialist electronics and audio engineering firm. We design, manufacture, and service precision calibration hardware for the professional and enthusiast audio tape community. Our work centers on reel-to-reel tape equipment.</p>
+        </div>
+        <div class="about-box">
+          <h3>Our <img src="img/otari.png" width="50"> Connection</h3>
+          <p>Through established connections with <a href="https://www.otari.co.jp/"><strong>Otari, Inc.</strong></a>, Quarrybank has access to factory parts, past engineering schematics, and limited manufacturer technical support. This gives us a significant advantage in diagnosing and restoring Otari-brand reel-to-reel machines to factory specification.</p>
+        </div>
+        <div class="about-box">
+          <h3>Contact</h3>
+          <p>
+            General inquiries: <a href="mailto:csgocam123@gmail.com">mail here</a><br>
+            Orders &amp; repairs (specify product/machine!): <a href="mailto:camekommd@gmail.com">mail here</a><br>
+            Webmaster: <a href="mailto:camekommd@gmail.com">mail here</a>
+          </p>
+          <p class="tm-notice">Quarrybank and the wave logo are NOT registered trademarks of Quarrybank Media Production and/or its subsidiaries.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <div>©2026 Quarrybank Media Production. All rights reserved.</div>
+    <div>
+      Questions? <a href="mailto:csgocam123@gmail.com">E-mail us</a>
+      &nbsp;·&nbsp;
+      Problems? <a href="mailto:camekommd@gmail.com">Webmaster</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function tick() {
+    const n = new Date(), h = n.getHours(), m = n.getMinutes(), s = n.getSeconds();
+    const ap = h >= 12 ? 'PM' : 'AM';
+    const hh = h % 12 || 12;
+    document.getElementById('live-clock').textContent =
+      String(hh).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0') + ' ' + ap;
+  }
+  tick(); setInterval(tick, 1000);
+
+  const PAGES = ['home', 'whats-new', 'products', 'about'];
+
+  function showPage(id, el) {
+    if (!PAGES.includes(id)) id = 'home';
+    document.querySelectorAll('.panel-section').forEach(p => p.classList.remove('visible'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('visible');
+    if (el) {
+      el.classList.add('active');
+    } else {
+      const match = document.querySelector(`.nav-item[onclick*="'${id}'"]`);
+      if (match) match.classList.add('active');
+    }
+    location.hash = id;
+    return false;
+  }
+
+  (function () {
+    const hash = location.hash.replace('#', '');
+    showPage(PAGES.includes(hash) ? hash : 'home', null);
+  })();
+</script>
+</body>
 </html>
